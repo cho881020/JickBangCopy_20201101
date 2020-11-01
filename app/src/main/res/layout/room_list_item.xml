@@ -23,6 +23,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/priceTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="23sp"
@@ -31,14 +32,16 @@
                 android:text="가격자리" />
 
             <TextView
+                android:id="@+id/addressAndFloorTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:layout_marginTop="5dp"
+                android:text="주소 , 층수"
                 android:textColor="#000000"
-                android:text="주소 , 층수" />
+                android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/descriptionTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"

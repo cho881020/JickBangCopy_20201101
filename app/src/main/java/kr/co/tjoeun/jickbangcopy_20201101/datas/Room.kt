@@ -40,6 +40,24 @@ class Room(
 
 //    2) 층수값에 따라서 몇층인지 알려주기. (ex. 2층, 반지하, 지하 1층)
 
+    fun getFormattedFloor() : String {
+
+//        floor의 값이 1이상, 0, 그 외 (0미만) 냐에 따른 분기 처리
+        if (floor >= 1) {
+//            1,2,3.. => 1층, 2층, 3층.. => ?층
+            return "${floor}층"
+        }
+        else if (floor == 0) {
+//            무조건 "반지하" 결과
+            return "반지하"
+        }
+        else {
+//            -1, -2, -3... => 지하 1층, 지하 2층.. => 지하 ?층
+            return "지하 ${-floor}층"
+        }
+
+    }
+
 }
 
 

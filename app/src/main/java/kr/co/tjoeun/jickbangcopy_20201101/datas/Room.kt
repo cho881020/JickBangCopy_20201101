@@ -24,12 +24,16 @@ class Room(
             val uk = price / 10000 // 25300 / 10000 = 2, 175000 / 10000 = 17
             val rest = price % 10000 // 25300 % 10000 = 5300
 
-            val commaRest = NumberFormat.getNumberInstance(Locale.US).format(rest)
+            val commaRest = NumberFormat.getNumberInstance(Locale.KOREA).format(rest)
 
             return "${uk}억 ${commaRest}"
         }
         else {
-            return "1억이 안됨"
+
+//            8500 등으로 1만이 안되는 경우만 여기서 실행.
+//            컴마처리만 해서 바로 결과로지정하자.
+
+            return NumberFormat.getNumberInstance(Locale.KOREA).format(price)
         }
 
     }

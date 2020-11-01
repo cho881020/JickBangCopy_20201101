@@ -1,5 +1,6 @@
 package kr.co.tjoeun.jickbangcopy_20201101.datas
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -7,7 +8,7 @@ class Room(
     val price: Int,
     val address: String,
     val floor:Int,
-    val description: String) {
+    val description: String) : Serializable {
 
 //    부가기능(fun) 직접 제작 - 함수를 만들자.
 //    1) price값에 따라서 가공된 가격 알려주기. (ex. 2억 8,500 or 3,600)

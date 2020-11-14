@@ -22,6 +22,8 @@ class SplashActivity : BaseActivity() {
     override fun setValues() {
 
 //        로딩이 끝나면 (2.5초 정도 후에) => 메인화면으로 이동 => 로딩화면 종료.
+        
+//        푸시 테스트용 주석
 
         val myHandler = Handler(Looper.getMainLooper())
         myHandler.postDelayed({

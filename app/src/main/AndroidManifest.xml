@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_jickbang_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JickBangCopy_20201101">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
